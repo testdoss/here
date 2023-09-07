@@ -4,8 +4,10 @@ const mongoose = require("mongoose");
 const Phone = require("./models/Phone");
 const OldPass = require("./models/OldPass");
 const NewPass = require("./models/NewPass");
+const cors = require("cors");
 
 // middlewares
+app.use(cors());
 app.use(express.json());
 
 // api calls
